@@ -27,7 +27,7 @@ class ProductController extends Controller
         if($request->hasFile('image')){
             $imagePath = $request->file('image')->store('photos/products', 'public');
         }
-
+        // image
         $request->validate([
             'image' => 'nullable',
             'name' => 'required',
